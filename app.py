@@ -7,5 +7,9 @@ def hello():
     print("Hello")
     return 'Hello'
 
+@app.route('/aboutus',methods=['GET'])
+def aboutus():
+    return 'aboutus'
+
 if __name__ == "__main__":
     app.run(port=3000,debug=True)
